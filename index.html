@@ -15,19 +15,27 @@
   <body>
     <header class="header">
       <nav>
-        <ul class="menu">
-          <li class="menu__item_not_ellips">главная</li>
-          <li><a href="#">посмотреть лоты</a></li>
-          <li><a href="#">об аукционе</a></li>
+        <ul class="header__menu">
+          <li class="header__links-list-item_no-bullit"><a href="#" class="header__link_active">главная</a></li>
+          <li><a class="header__link" href="#">посмотреть лоты</a></li>
+          <li><a class="header__link" href="#">об аукционе</a></li>
         </ul>
-        <img class="header__logo" alt="Логотип" src="images/logo-black.svg"/>
       </nav>
+      <img class="header__logo" alt="Логотип" src="images/logo-black.svg"/>
+      <address class="address">
+        <a href="tel:+99995555555">+9 999 555 5555</a>
+        <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
+        <p>наб. Принсенграхт 263-265,<br> Амстердам</p>
+      </address>
     </header>
     <!--основная секция состоит из трёх блоков (входной, карточки с лотами, информация с лотами), 
     причём все эти блоки связаны контекстно,
     поэтому будем использовать теги section-->
     <main>
-      <section class="cover"></section>
+      <section class="cover">
+        <!-- <img class="overlay" src="images/cover.jpg"> -->
+        <div class="overlay"></div>
+      </section>
       <section class="lots"></section>
       <section class="about"></section>
     </main>
