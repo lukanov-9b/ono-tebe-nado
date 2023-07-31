@@ -1,1 +1,18 @@
 /* место для вашего кода */
+.header {
+    padding: 92px 49px 92px 51px;
+}
+
+.menu {
+    display: flex;
+    gap: 32px;
+    list-style-type: circle;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.menu__item_not_ellips {
+    list-style: none;
+}
