@@ -50,6 +50,7 @@
     background-color: #000;
     min-height: 757px;
     width: 100%;
+    height: 757px;
 }
 
 .cover__overlay-img {
@@ -79,8 +80,12 @@
 }
 
 .aligned-text_center {
+    /* в макете ширина этого блока меньше, чем ширина соседних
+    применим к данному селектору свойства display: block и  width*/
+    display: block;
     text-align: center;
     line-height: 100px;
+    width: 1280px;
 }
 
 .aligned-text_right {
@@ -91,4 +96,66 @@
 .addspacing {
     letter-spacing: 60px;
 
+}
+
+.nullspacing {
+    letter-spacing: 0px;
+}
+
+.cover__description {
+    margin-top: 135px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: flex-end;
+    gap: 78px;
+}
+
+.cover__description-text {
+    font-size: 22px;
+    font-weight: 400; 
+    text-transform: uppercase;
+    line-height: 0.5;
+    color: #fff;
+    z-index: 1;
+    /* удобнее всего воспользоваться пробелами, которые есть в названии макета 
+    будем учитывать их, используя свойство white-space: pre*/
+    white-space: pre;
+}
+
+.bet-button {
+    background-color: transparent;
+    border: 1px solid #FFF;
+    width: 257px;
+    height: 52px;
+}
+
+.lots {
+    margin: 180px 50px;
+    position: relative;
+}
+
+.lots__heading {
+    margin-left: 40px;
+    font-size: 40px;;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.lots__card-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+
+.lots__card-list-item {
+    min-height: 450px;
+    background-color: #000;
+}
+
+.card__title {
+    z-index: 1;
 }

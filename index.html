@@ -33,15 +33,38 @@
     поэтому будем использовать теги section-->
     <main>
       <section class="cover">
-          <!--вставим картинку не как background, а через отдельный тег <img>-->
+          <!--вставим картинку не как background, а через отдельный тег <img>
+          здесь картинка не несёт смсловой нагрузки, однако через тег <img> удобнее будет сдлелать
+        заьемнение картинки-->
         <img class="cover__overlay-img" src="images/cover.jpg"/>
         <h1 class="cover__title">
-            <span class="aligned-text">О<span class="cover__title-addspacing">но</span></span>
+            <span class="aligned-text">о<span class="addspacing">н</span><span class="nullspacing">о</span></span>
             <span class="aligned-text_center">те<span class="addspacing">б<span class="nullspacing">е</span></span></span>
-            <span class="aligned-text_right"><span class="cover__title-addspacing">на</span>д<span class="cover__title-addspacing">о</span></span>
+            <span class="aligned-text_right"><span class="addspacing">н</span>ад<span class="nullspacing">о</span></span>
         </h1>
+        <section class="cover__description">
+          <h2 class="cover__description-text">
+            Аукцион    вещей,    в    которые    никто    не     верил
+          </h2>
+          <button class="cover__description-text bet-button">сделать ставку</button>
+        </section>
       </section>
-      <section class="lots"></section>
+      <section class="lots">
+        <h2 class="lots__heading">лоты</h2>
+        <!-- первая карточка -->
+        <ul class="lots__card-list">
+          <li class="lots__card-list-item">
+            <a class="card-link">
+              <article class="card card_type_film">
+                <img class="cover__overlay-img" src="images/card-lot-01.jpg" />
+                <h3 class="card__title">Фильм режиссёра, который  бросил киношколу</h3>
+                <p class="card__text">Не просто бросил, а ушёл с первой лекции. Какой 
+                  была бы ваша ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?</p>
+              </article>
+            </a>
+          </li>
+        </ul>
+      </section>
       <section class="about"></section>
     </main>
     <footer class="footer"></footer>
