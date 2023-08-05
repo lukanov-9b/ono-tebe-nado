@@ -1,4 +1,8 @@
 /* место для вашего кода */
+html {
+    scroll-behavior: smooth;
+}
+
 .header {
     padding: 92px 49px 92px 39px;
     display: grid;
