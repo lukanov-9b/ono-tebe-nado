@@ -1,6 +1,6 @@
 /* место для вашего кода */
 .header {
-    padding: 92px 49px 92px 39px;
+    padding: 92px 49px 92px 51px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
@@ -24,6 +24,7 @@
 
 .header__link {
     text-decoration: underline;
+    text-underline-offset: 4px;
 }
 
 .header__link_active {
@@ -44,8 +45,13 @@
     display: flex;
     flex-direction: column;
     justify-self: end;
-    line-height: 24.3px;
     max-width: 240px;
+    line-height: 24.3px;
+}
+
+.address__link {
+    text-decoration: underline;
+    text-underline-offset: 4px;
 }
 
 .cover {
@@ -128,9 +134,9 @@
     font-size: 22px;
     font-weight: 400; 
     text-transform: uppercase;
-    line-height: 0.5;
     color: #fff;
     word-spacing: 17px;
+    line-height: 28px;
 }
 
 /* из макета можно заметить, что между двумя последними словами интервал больше */
@@ -144,6 +150,12 @@
     width: 257px;
     height: 52px;
     cursor: pointer;
+    line-height: normal;
+    padding: 12px 32px;
+    font-size: 22px;
+    font-weight: 400; 
+    text-transform: uppercase;
+    color: #fff;
 }
 
 .lots {
@@ -212,6 +224,7 @@
     color: #000;
     text-decoration: underline;
     margin-left: 40px;
+    text-underline-offset: 4px;
 }
 
 .about {
@@ -220,6 +233,7 @@
     grid-template-columns: 430px auto; /* 430px - ширина карточки*/
     grid-template-rows: repeat(2, auto);
     column-gap: 25px;
+    row-gap: 8px;
     grid-template-areas:
     "about__logo about__title"
     ". about__text";
@@ -263,6 +277,10 @@
 
 .footer address {
     justify-self: start;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24.3px;
 }
 
 .footer__menu {
